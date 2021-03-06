@@ -17,8 +17,7 @@ public class Program {
 	}
 	
 
-	public static void main(String[] args) {	
-		
+	public static void main(String[] args) {			
 		List<Aplicant> listaAplicanti;
 		try {			
 			listaAplicanti = readAplicanti("studenti.txt", new ReaderStudent());
