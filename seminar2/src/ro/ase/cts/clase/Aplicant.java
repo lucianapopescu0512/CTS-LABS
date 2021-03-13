@@ -29,6 +29,19 @@ public abstract class Aplicant{
 	public void setVarsta(int varsta) {
 		this.varsta = varsta;
 	}
+	
+	public int getNr_proiecte() {
+		return nr_proiecte;
+	}
+	public String[] getDenumireProiect() {
+		return denumireProiect;
+	}
+	public void setDenumireProiecte(String[] denumireProiect,int nr_proiecte) {
+		this.nr_proiecte = nr_proiecte;
+		this.denumireProiect = denumireProiect;
+	}
+	
+	
 	public void statut(){
 		if(punctaj>80)
 			System.out.println("Aplicantul "+nume+" "+prenume+" a fost acceptat.");
@@ -56,12 +69,7 @@ public abstract class Aplicant{
 		this.nr_proiecte = nr_proiecte;
 		this.denumireProiect = denumireProiect;
 	}
-	public int getNr_proiecte() {
-		return nr_proiecte;
-	}
-	public void setNr_proiecte(int nr_proiecte) {
-		this.nr_proiecte = nr_proiecte;
-	}
+
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
