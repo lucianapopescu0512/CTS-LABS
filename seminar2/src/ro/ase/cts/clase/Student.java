@@ -33,8 +33,15 @@ public class Student extends Aplicant {
 	}
 	@Override
 	public String toString() {
-		return "Student: Nume=" + nume + ", Prenume=" + prenume + ", Varsta=" + varsta + ", Punctaj=" + punctaj + ", Nr_proiecte=" + nr_proiecte +  ", DenumireProiect=" + Arrays.toString(denumireProiect) + "Facultate=" + facultate + ", An_studii=" + an_studii ;
-	}
+		StringBuilder builder = new StringBuilder("Student ");
+		builder.append(super.toString());
+		builder.append(", facultate=");
+		builder.append(facultate);
+		builder.append(", an_studii=");
+		builder.append(an_studii);
+		builder.append("]");
+		return builder.toString();
+		}
 	
 	
 	public int finantare() {
