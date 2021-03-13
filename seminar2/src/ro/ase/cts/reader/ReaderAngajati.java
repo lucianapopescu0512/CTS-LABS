@@ -9,11 +9,16 @@ import java.util.Scanner;
 import ro.ase.cts.clase.Angajat;
 import ro.ase.cts.clase.Aplicant;
 
-public class ReaderAngajati implements ReaderAplicant{
+public class ReaderAngajati extends ReaderAplicant{
 
-	@Override
-	public List<Aplicant> readAplicanti(String file) throws FileNotFoundException {
-		Scanner input2 = new Scanner(new File(file));
+	
+	
+	public ReaderAngajati(String numeFisier) {
+		super(numeFisier);
+	}
+
+	public List<Aplicant> readAplicanti() throws FileNotFoundException {
+		Scanner input2 = new Scanner(new File(super.numeFisier));
 		input2.useDelimiter(",");
 		List<Aplicant> angajati = new ArrayList<Aplicant>();
 
