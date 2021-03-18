@@ -22,15 +22,15 @@ public abstract class ReaderAplicant {
 		String prenume = scanner.next();
 		int varsta = scanner.nextInt();
 		int punctaj = scanner.nextInt();
-		int nr = scanner.nextInt();
-		String[] vect = new String[5];
-		for (int i = 0; i < nr; i++)
-			vect[i] = scanner.next();
+		int numarProiecte = scanner.nextInt();
+		String[] denumiriProiecte = new String[5];
+		for (int pas = 0; pas < numarProiecte; pas++)
+			denumiriProiecte[pas] = scanner.next();
 		aplicant.setNume(nume);
 		aplicant.setPrenume(prenume);
 		aplicant.setVarsta(varsta);
 		aplicant.setPunctaj(punctaj);
-		aplicant.setDenumireProiecte(vect,nr);
+		aplicant.setDenumireProiecte(denumiriProiecte,numarProiecte);
 	}
 	
 }

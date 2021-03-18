@@ -12,8 +12,8 @@ import ro.ase.cts.reader.ReaderStudent;
 
 public class Program {
 	
-	public static List<Aplicant> readAplicanti(ReaderAplicant readerAplic) throws FileNotFoundException{	
-		return readerAplic.readAplicanti();
+	public static List<Aplicant> readAplicanti(ReaderAplicant readerAplicant) throws FileNotFoundException{	
+		return readerAplicant.readAplicanti();
 	}
 	
 
@@ -23,8 +23,8 @@ public class Program {
 			listaAplicanti = readAplicanti(new ReaderStudent("studenti.txt"));
 			for(Aplicant aplicant:listaAplicanti)
 				System.out.println(aplicant.toString());
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+		} catch (FileNotFoundException error) {
+			error.printStackTrace();
 		}
 	}
 
