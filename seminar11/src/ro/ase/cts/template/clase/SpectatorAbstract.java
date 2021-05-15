@@ -1,4 +1,4 @@
-package ro.ase.cts.observer.template.clase;
+package ro.ase.cts.template.clase;
 
 public abstract class SpectatorAbstract {
 	public abstract void aseazareCoada();

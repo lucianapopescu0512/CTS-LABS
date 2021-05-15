@@ -1,8 +1,8 @@
-package ro.ase.cts.observer.template.program;
+package ro.ase.cts.template.program;
 
-import ro.ase.cts.observer.template.clase.Spectator;
-import ro.ase.cts.observer.template.clase.SpectatorAbstract;
-import ro.ase.cts.observer.template.clase.SpectatorVIP;
+import ro.ase.cts.template.clase.Spectator;
+import ro.ase.cts.template.clase.SpectatorAbstract;
+import ro.ase.cts.template.clase.SpectatorVIP;
 
 public class Main {
 
