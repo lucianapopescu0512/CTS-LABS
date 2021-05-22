@@ -37,7 +37,9 @@ public class Student {
         if(index>=0 && index< note.size()){
             return note.get(index);
         }
-        throw new IndexOutOfBoundsException();
+       throw new IndexOutOfBoundsException();
+       // throw new IllegalArgumentException();
+       // return -1;
     }
 
     public float calculeazaMedie(){
@@ -54,9 +56,9 @@ public class Student {
     public boolean areRestante() {
     	for(int nota:note) {
     		if(nota<5) {
-    			return false;
+    			return true;
     		}
     	}
-    	return true;
+    	return false;
     }
 }
